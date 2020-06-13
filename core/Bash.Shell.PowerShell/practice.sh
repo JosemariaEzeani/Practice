@@ -12,6 +12,7 @@ echo WHAT IS YOUR NAME?
 read name
 echo HELLO $name
 
+# Built-In Bash Variables ($0-1...n)
 params=$# #number of previous args
 args=$@ #returns previous args
 hello=$? #returns previous exist status
