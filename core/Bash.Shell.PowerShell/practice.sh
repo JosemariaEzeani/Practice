@@ -1,16 +1,42 @@
-#!bin/bash
-# note: oriented around exist statuses
-# www.gnu.org/software/
-# use "help <cmd>" when unsure
-# excludes coreutils.fileutils
+#! /bin/bash
+
+: '
+
+Login Shell: /etc/profile >> ~/.bash_profile >> ~/.profile ~/.bash_login
+Non-Login Shell: /etc/bash.bashrc ~/.bashrc
+Shell Variables...
+
+note: oriented around exist statuses
+www.gnu.org/software/
+use "help <cmd>" when unsure
+excludes coreutils.fileutils
+
+'
 
 # coreutils.shellutils
 
 # use echo to write arguments to standard output
 echo START OF PRACTICE
 echo WHAT IS YOUR NAME?
-read name
-echo HELLO $name
+select name in Dinaka John Daniel Jolie Gerald Nneka
+do
+  case $name in
+  Dinaka)
+  	echo Hello $name Ezeani;;
+  John)
+  	echo Hello $name Baxter;;
+  Daniel)
+  	echo Hello $name Sphinx;;
+  Jolie)
+  	echo Hello $name Spark;;
+  Gerald)
+  	echo Hello $name Black;;
+  Nneka)
+  	echo Hello $name Okafor;;
+  *)
+  	echo 'You are not invited\!';;
+  esac
+done
 
 # Built-In Bash Variables ($0-1...n)
 params=$# #number of previous args
@@ -22,9 +48,9 @@ echo I SAID: $args
 ten=10
 
 for i in {0..20..2}
-value=$((i+params))
 do
-  if  [ $value -lt $ten]; then
+  value=$((i+params))
+  if  [ $value -lt $ten ]; then
     echo $value IS LESS THAN $ten
   elif [ $value -gt $ten ]; then
     echo $value IS GREATER THAN $ten
@@ -38,21 +64,23 @@ done
 
 # declare variables (-x to export)
 # ~ slightly different for associative arrays
-echo arr=() #empty array
-echo arr=(1 2 3) #init array
-arr[2]=3 #overwrite 3rd element
-arr+=(4 5) #append 4 to end
-arr=(-1 0)+arr #append to front
-str=$(1s) #save 2nd output as string
-str=( $(1s) ) #save 2nd output as array of files
+arr=()
+arr=(0 1 2 3)
+arr[4]=4
+arr+=(5 6)
 # use of unset requires reseting indices
-unset arr[0] # remove elem
-arr=(${arr[@]}) # new array without missing indices
-echo ${arr[0]} #get 1st element
-echo ${arr[@]} #get all elements
-echo ${!arr[@]} #get array indices
-echo ${#arr[@]} #get array size
-echo ${arr[@]:1:5} #get 5 elements starting from 2nd
+unset arr[0] # remove elem (followed by new array init)
+arr=(${arr[@]} 7) # new array (RegEx possible)
+echo GET 1st ELEMENT
+echo ${arr[0]}
+echo GET ALL ELEMENTS
+echo ${arr[@]}
+echo GET ARRAY INDICES
+echo ${!arr[@]}
+echo GET ARRAY SIZE
+echo ${#arr[@]}
+echo GET ELEMENTS  2nd-6th
+echo ${arr[@]:1:5}
 
 # functions
 
@@ -77,3 +105,20 @@ echo ${arr[@]:1:5} #get 5 elements starting from 2nd
 
 
 # ^ Base System ^
+
+cat << readLine
+Simple program that reads from terminal or file.
+Default: Terminal (without file as arg)
+readLine
+
+function printLine() # note: side effects are possible
+{
+  echo $1
+}
+
+while read line
+do
+  echo printLine $line
+done < ${1:-/dev/stdin}
+
+# bash -x (to debug code)[-x][set -x set +x]
