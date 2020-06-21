@@ -12,7 +12,7 @@
 [^] (matches characters NOT in brackets)
 
 . wildcard (excludes line breaks)\
-- (also range indicator)
+\- (also range indicator)
 
 # Metacharacters (use \ to escape)
 
@@ -34,8 +34,8 @@ $ (end of line)
 
 # Quantification (addition of ? for non-greedy)
 ? 0 | 1\
-* 0 | +\
-+ 1 | +\
+\* 0 | +\
+\+ 1 | +\
 {n} match exactly n times\
 {min,} match min or more times\
 {min,max} match at least min times but no more than max
