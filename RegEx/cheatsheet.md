@@ -39,3 +39,22 @@ $ (end of line)
 {n} match exactly n times\
 {min,} match min or more times\
 {min,max} match at least min times but no more than max
+
+```javascript
+
+   // Solution 1
+   input.replace(regex,function(_,href,text){
+      output.push(href.trim()+','+text.replace(/<.*?>/g,'').trim());
+   });
+   console.log(output.join('\n'));
+
+   // Solution 2
+   while (m = regex.exec(input)) {
+      console.log(`${m[1].trim()},${m[2].replace(/<.*?>/g, '').trim()}`);
+   }
+
+   // Solution 3 (expensive?)
+   const r = /<a href="(.*?)".*?>([\w .,\/]*)(?=<\/)/g;
+   while (m = r.exec(input)) console.log(m);
+
+```
