@@ -1,15 +1,15 @@
 # Basic concepts (backreferences with \n)
 
-| represents a boolean "or"
+| represents a boolean "or"\\
 
-() (capturing group)
-(?:) (non-capturing group)
-(?=) (positive lookahead)
-(?<=) (positive lookbehind)
-(?!) (negative lookahead)
-(?<!) (negative lookbehind)
-[] (matches characters in brackets)
-[^] (matches characters NOT in brackets)
+() (capturing group)\
+(?:) (non-capturing group)\
+(?=) (positive lookahead)\
+(?<=) (positive lookbehind)\
+(?!) (negative lookahead)\
+(?<!) (negative lookbehind)\
+[] (matches characters in brackets)\
+[^] (matches characters NOT in brackets)\
 
 
 . wildcard (excludes line breaks)
@@ -33,8 +33,7 @@
 ^ (begining of line)
 $ (end of line)
 
-# Quantification
-
+# Quantification (addition of ? for non-greedy)
 ? 0 | 1
 * 0 | +
 + 1 | +
