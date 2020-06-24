@@ -10,6 +10,12 @@ fancyNine =
 fancySeven = 2 * a + 1 -- where cannot exist here (func def)
     where a = 3 -- top down
 
+-- operators perform as functions in parentheses
+-- operator definitions are possible
++1 	= (1+)
++1' 	= (+1)
+10 `mod` 2 -- function as operator
+
 -- Pure Functions (only recursion)
 
 {-| Conversion of Loop to Recursion
@@ -37,11 +43,25 @@ pow2 n
 
 -}
 
--- Higher Order Functions
+-- Higher Order Functions (accepts default params - order matters)
+map length ["Hello","World","!"] -- Map (works well with partial functions)
+-- Filter
+-- Fold [ applies function to
+--      l ... accumulator and firt list item (tail recursive - slightly faster)
+--      r ... first list item and accumilator (lazy eval - infinite lists)
+--      ]
+-- Zip (creates pairs from two lists) [extension include ZipWith3, ZipWith4, etc..]
+-- lambda Expr - starts with \ and -> instead of = (consider partial app/ named function)
+
+-- Function Composition (.)[single arg required]
+-- Function Application ($)
 
 -- Monadic Functions
 
--- Types
+-- Explicit Types (variable declaration plus :: type) | GHCi to view type constraints (=>)
+-- Mostly used for communication / debugging / performance opti purposes
+-- Type Annotations and Polymorphic Funcs also possible... (latter with lower case name)
+-- ... Concetre Types (e.g. Int Integer, Char) start with Upper case
 
 -- Lists (must be homogeneous) -- contrasting tuples
 -- append to List ([] is empty)
