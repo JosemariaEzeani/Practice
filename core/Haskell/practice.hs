@@ -77,8 +77,6 @@ double' nums = case nums of -- for when pattern matching is difficult
    (x : xs)	-> (2 * x) : (double' xs)
    -- cannot use guards in a case expression
 
-
-
 -- Custom Types
 
 -- Type Classes
