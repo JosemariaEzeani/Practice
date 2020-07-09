@@ -2,6 +2,8 @@
 // val = assignment cannot change
 // no explicit return => last value
 
+// operators: prefix infix postfix
+
 // Collections Hierarchy
 // Transversable >> Iterable [Seq | Set | Map]
 // Seq [IndexedSeq | LinearSeq]
@@ -17,9 +19,14 @@ for {
 
 // yield to generate a new number
 
-// functions
+// @tailrec
+
+// functions / return a unit when there is a side effect
 def functionName(argument: Type): returnType = {body}
 // => for anonymous or function literal
+
+// control abstractions: currying
+
 // case class apply with companion object is created automatically
 // case class also adds copy, hashCode, equals, toString by default
 
@@ -28,3 +35,5 @@ def functionName(argument: Type): returnType = {body}
 // either - left | right
 
 // pattern matching
+
+// implicit conversion: [Marking | Scope | One-at-a-time | Explicit-First]
