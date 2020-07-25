@@ -1,6 +1,15 @@
 - [TOC]
 
-# OOP Design
+# OOP Design Principles
+
+## SOLID
+- [ ] Single-responsibility
+- [ ] Open-Closed [Extension/Modification]
+- [ ] Liskov Substitution: objs can be subbed with subtype [correctness]
+- [ ] Interface Segregation: many specific > general-purpose interfaces
+- [ ] Dependency Inversion: depend on abstractions not concretions
+
+# OOP Design Patterns
 
 ## Creational: `creates objects > instantiation.`
 
