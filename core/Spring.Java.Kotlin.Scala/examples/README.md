@@ -38,6 +38,7 @@ Disclaimer
 
 ```java
 // Java also supports static and iniitialiser blocks
+// Double Brace Initialization utilises anonymous inner classes to apply parent methods
 ```
 
 
