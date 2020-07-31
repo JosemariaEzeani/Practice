@@ -30,18 +30,13 @@ Throwables
 
 ![Throwables](https://media.geeksforgeeks.org/wp-content/uploads/Exception-in-java1.png)
 
+Classes
+
+![Classes](https://media.geeksforgeeks.org/wp-content/uploads/d3.jpeg)
+
 Disclaimer 
 
 ```java
-// Avoid Nested Inner (Non-Static) Classes
-new Thread()
-{
-      public void run()
-      {
-        System.out.println("Shutdown Hook is running !"); 
-      }
-}
-// Nested Static Classes Also Possible
 // Java also supports static and iniitialiser blocks
 ```
 
