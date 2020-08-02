@@ -1,6 +1,12 @@
 Data Types
 
+Data Types
+
 ![Data Types](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191105111644/Data-types-in-Java.jpg)
+
+Numbers
+
+![Numbers](https://media.geeksforgeeks.org/wp-content/uploads/lang-1.png)
 
 Primitives 
 
@@ -33,6 +39,20 @@ Throwables
 Classes
 
 ![Classes](https://media.geeksforgeeks.org/wp-content/uploads/d3.jpeg)
+
+Reflection
+
+![Reflection](https://media.geeksforgeeks.org/wp-content/cdn-uploads/reflection.png)
+
+Lifecycle and States of a Thread
+
+![Threads](https://media.geeksforgeeks.org/wp-content/uploads/threadLifeCycle.jpg)
+
+![Threads](https://media.geeksforgeeks.org/wp-content/uploads/50-1.png)
+
+Semaphore
+
+![Semaphore](https://media.geeksforgeeks.org/wp-content/uploads/d2.jpeg)
 
 Disclaimer 
 

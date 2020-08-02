@@ -100,6 +100,7 @@
 
 ## Concurrency Design
 
+- [ ] Producer-Consumer:
 - [ ] Active Object:
 - [ ] Actor:
 - [ ] Balking:
