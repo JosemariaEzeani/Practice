@@ -16,7 +16,9 @@ chmod - change permission
 chown - change owner
 ```
 ```powershell
-
+New-Alias
+Resolve-Path
+Set-Variable
 ```
 ```shell
 
@@ -46,6 +48,16 @@ pkill <name> - kill process
 killall name - kill all with name
 ```
 ```powershell
+Import-CliXML/CSV...
+Export-CliXML/CSV...
+ConvertTo-XML/HTML...
+ConvertFrom-CSV...
+
+Start-Sleep
+Start-Job
+Resume-Job
+Suspend-Job
+Wait-Job
 
 ```
 ```shell
@@ -59,12 +71,46 @@ file - get type of file
 find - find files
 locate - locate files
 whereis - find command
+whoami
+
+Networking
+ping
+whois
+curl
+ssh
+scp
 ```
 ```powershell
+Get-Command
+Show-Command
+Get-Help
+Get-Process
+Get-Location
+Set-Location
+Get-Member
+Get-ChildItem
 
+Get-History
+Invoke-History
+
+Parameters 
+-Confirm - send prompts for actions
+-WhatIf - displays consequence of command
+
+Compare-Object
+Group-Object
+Sort-Object
+Foreach-Object
+Measure-Object
+Where-Object
+
+Invoke-WebRequest
+Start-Service
+Start-Process
 ```
 ```shell
-
+fc
+help
 ```
 Introduction - Maths
 ```bash
@@ -91,6 +137,7 @@ Get-ChildItem
 ```
 ```shell
 cd
+md
 dir
 ```
 Core - File Management
@@ -102,7 +149,9 @@ rm - deletes file
 Remove-Item
 ```
 ```shell
-del, erase, rmdir
+del
+erase
+rm
 ```
 Core - File System
 ```bash
@@ -112,11 +161,20 @@ install - advanced cp
 ```
 ```powershell
 Copy-Item
-Move-Item Rename-Item
+Move-Item 
+Rename-Item
+Remove-Item
+Set-Item
+New-Item
+Get-ItemProperty
+Set-ItemProperty
+Format-Table
+Format-List
 ```
 ```shell
 copy
-move rename
+move
+rename
 ```
 Core - Directory Management
 ```bash
@@ -179,7 +237,11 @@ sed
 awk
 ```
 ```powershell
+Get-CimInstance
 Get-Content
+Add-Content
+Set-Content
+Select-String
 ```
 ```shell
 type
@@ -338,6 +400,13 @@ done < ${1:-/dev/stdin}
 PowerShell Scripting...
 
 ```powershell
+$a,$b = [int]5 <# Variable Assignment #>
+$a,$b = $b,$a # Pattern Matching
+#` to escaped chars/ for special characters/ breaking long statements
+
+Read-Host
+Write-Host
+Clear-Host
 
 ```
 

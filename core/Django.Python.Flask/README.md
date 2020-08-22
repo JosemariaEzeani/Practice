@@ -15,3 +15,6 @@ def function(args):
 # Generators and Iterators   
 ```
 
+References:
+
+https://en.wikibooks.org/wiki/Python_Programming
