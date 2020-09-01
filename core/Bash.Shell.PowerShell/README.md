@@ -1,13 +1,15 @@
 Introduction - General
 ```bash
-Variables:
+bash # start bash
 
-- env
-- $NAME, $PATH, $HOME
+
+
+Variables:
+- env # displays environment variables
+- $NAME, $PATH, $HOME, $BASH_VERSION
 - $$SHELL 
 
 Permissions:
-
 - owner, group, everyone
 - read (r), write (w), execute (x)
 - read (4), write (2), execute (1)
@@ -26,7 +28,8 @@ Set-Variable
 
 Introduction - Commands
 ```bash
-< >  and >> to append to file
+< > redirection of command stdin/out from/to file
+>> to append to file
 | to redirect stdout of commands
 ; command from left to right
 && 2nd if 1st is successful
@@ -42,6 +45,15 @@ Introduction - Commands
 Introduction - System
 ```bash
 ps - processes
+jobs - lists jobs
+
+fg/bg - list processes / change environment
+fg %+        # brings most recently invoked background job
+fg %-        # brings second most recently invoked background job
+fg %N        # brings job number N
+fg %string   # brings job whose command begins with string
+fg %?string  # brings job whose command contains string
+
 top - real-time processes 
 kill <pid> kill process 
 pkill <name> - kill process
@@ -71,11 +83,15 @@ file - get type of file
 find - find files
 locate - locate files
 whereis - find command
+which - 
 whoami
 
 Networking
 ping
 whois
+w - whois online
+dig - get DNS info
+wget - downloads file
 curl
 ssh
 scp
@@ -142,8 +158,9 @@ dir
 ```
 Core - File Management
 ```bash
-touch - create file
+touch - create/edit file
 rm - deletes file
+ln - creates a symbolic link to file
 ```
 ```powershell
 Remove-Item
@@ -200,10 +217,16 @@ popd
 Core - Information
 ```bash
 whoami - show username
+finger - shows information about user
+last - last logins
+passwd - change password
 man <cmd> - show manual for command
 free - memory info
-df - space usage
+quota - 
+du/df - space usage
 uptime - show uptime
+date - show date and time 
+cal - shows month's calendar 
 shred - securely delete
 date - show date
 mount - show file systems
@@ -223,6 +246,7 @@ cat [-n - show line nums][> - override and >> append]
 head [-n/c- lines/characters] from a file/files
 tail [-n - number of lines] from a file/files
 less - displays contents of a file
+more - displays first part of file
 
 Basic Modification
 sort - sorts files (-n -r -k -t)
@@ -235,6 +259,10 @@ bc
 grep - searches text
 sed
 awk
+
+gzip # compresses file 
+gunzip # uncompress file 
+gzcat # view compressed file
 ```
 ```powershell
 Get-CimInstance
@@ -421,5 +449,6 @@ https://ss64.com/ps/
 https://ss64.com/bash/
 https://ss64.com/osx/
 https://ss64.com/nt/
+https://en.wikibooks.org/wiki/Bourne_Shell_Scripting
 
 Notes: explore zshell on mac
