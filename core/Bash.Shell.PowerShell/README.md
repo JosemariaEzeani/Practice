@@ -2,25 +2,17 @@ Introduction - General
 ```bash
 bash # start bash
 
+# Variables:
+env # displays env vars (e.g., $NAME, $PATH, $HOME, $BASH_VERSION, $SHELL)
 
+# Permissions: owner, group, everyone
+# read (r), write (w), execute (x)
+# read (4), write (2), execute (1)
 
-Variables:
-- env # displays environment variables
-- $NAME, $PATH, $HOME, $BASH_VERSION
-- $$SHELL 
-
-Permissions:
-- owner, group, everyone
-- read (r), write (w), execute (x)
-- read (4), write (2), execute (1)
-
-chmod - change permission
-chown - change owner
+# chown/chmod - change owner/permission
 ```
 ```powershell
-New-Alias
-Resolve-Path
-Set-Variable
+
 ```
 ```shell
 
@@ -34,7 +26,6 @@ Introduction - Commands
 ; command from left to right
 && 2nd if 1st is successful
 || 2nd if 1st is not successful
-<cmd> & run in subshell
 ```
 ```powershell
 
@@ -44,20 +35,13 @@ Introduction - Commands
 ```
 Introduction - System
 ```bash
-ps - processes
-jobs - lists jobs
-
 fg/bg - list processes / change environment
-fg %+        # brings most recently invoked background job
-fg %-        # brings second most recently invoked background job
-fg %N        # brings job number N
-fg %string   # brings job whose command begins with string
-fg %?string  # brings job whose command contains string
+# %+/- (first/second most recently invoked)
+# %N/s (select by job number/ command as string) [begins with else ?s for contains]
 
-top - real-time processes 
-kill <pid> kill process 
-pkill <name> - kill process
-killall name - kill all with name
+top # real-time processes (ps/jobs - list processes/jobs)
+# kill/pkill - kill process by pid/name 
+killall # kill all processes
 ```
 ```powershell
 Import-CliXML/CSV...
