@@ -9,7 +9,7 @@ env # displays env vars (e.g., $NAME, $PATH, $HOME, $BASH_VERSION, $SHELL)
 # read (r), write (w), execute (x)
 # read (4), write (2), execute (1)
 
-# chown/chmod - change owner/permission
+# chown/chgrp/chmod - change owner/group/permission
 ```
 ```powershell
 
@@ -61,24 +61,10 @@ Wait-Job
 ```
 Introduction - Information
 ```bash
-arch - prints comp architecture
-date - prints dates
-file - get type of file
-find - find files
-locate - locate files
-whereis - find command
-which - 
-whoami
+# print (cal | date | file - type)
+# print (find/locate - file | whereis/which - cmd)
+# Networking (ping/dig | whois/w | wget/curl | ssh | scp)
 
-Networking
-ping
-whois
-w - whois online
-dig - get DNS info
-wget - downloads file
-curl
-ssh
-scp
 ```
 ```powershell
 Get-Command
@@ -114,10 +100,7 @@ help
 ```
 Introduction - Maths
 ```bash
-expr - evaluates expression
-factor - returns factors 
-seq - generates numbers 
-test - evaluates conditional expr
+# (expr | factor | seq | test)
 ```
 ```powershell
 
@@ -127,9 +110,7 @@ test - evaluates conditional expr
 ```
 Core - Navigation
 ```bash
-pwd - show current dir
-cd - change directory
-ls - list directory contents
+# (pwd | cd | ls/dir/vdir)
 ```
 ```powershell
 Set-Location
@@ -142,9 +123,7 @@ dir
 ```
 Core - File Management
 ```bash
-touch - create/edit file
-rm - deletes file
-ln - creates a symbolic link to file
+# (touch - create/edit | mv | rm - delete | ln - link) to file
 ```
 ```powershell
 Remove-Item
@@ -156,9 +135,7 @@ rm
 ```
 Core - File System
 ```bash
-cp - copy to source
-mv - renome or move
-install - advanced cp
+# (cp/dd/install)
 ```
 ```powershell
 Copy-Item
@@ -179,12 +156,8 @@ rename
 ```
 Core - Directory Management
 ```bash
-mkdir -p - creates dir
-rmdir - removes empty dir
-rm -r - removes dirs
-pushd - add dir to stack
-popd - rmv dir from stack
-dirs -vl - dirs in stack
+# (mkdir - create | rmdir/rm) directory 
+# (dirs - view | pushd - add to | popd - remove from) dir stack
 ```
 ```powershell
 New-Item
@@ -200,22 +173,13 @@ popd
 ```
 Core - Information
 ```bash
-whoami - show username
-finger - shows information about user
-last - last logins
-passwd - change password
-man <cmd> - show manual for command
-free - memory info
-quota - 
-du/df - space usage
-uptime - show uptime
-date - show date and time 
-cal - shows month's calendar 
-shred - securely delete
-date - show date
-mount - show file systems
-uname -a - show system and kernel
-head -n1 /etc/issue - show distribution
+# (whoami/id/logname/who/groups/users/finger | last/uptime | free/quota/du/df/stat
+# (uname - kernel | mount - file systems | arch/head -n1 /etc/issue )
+
+passwd # change password
+man # show manual for command
+shred # securely delete
+truncate # shrink/extend file size
 ```
 ```powershell
 
@@ -225,28 +189,32 @@ head -n1 /etc/issue - show distribution
 ```
 Core - Text Utilities
 ```bash
-Information
-cat [-n - show line nums][> - override and >> append]
-head [-n/c- lines/characters] from a file/files
-tail [-n - number of lines] from a file/files
-less - displays contents of a file
-more - displays first part of file
+# Information
+# cat/tac [-n - show line nums][> - override and >> append]
+# (gzip - compresses | gunzip - uncompress | gzcat - view compressed) file
+# head/tail/split/csplit/cut/paste/join - print segment(s) of file
+# nl/od/less/more - displays contents of a file
+# base32/base64 - transform into printable data
 
-Basic Modification
-sort - sorts files (-n -r -k -t)
-tr “from” “to” / -d (delete)
-uniq -c/d/u
+# summarise (wc/sum/cksum/b2sum/md5sum/sha1sum/sha2)
+
+# Formatting 
+fmt # reformat paragraph 
+pr # paginate/columnate files
+fold # wrap lines
+
+# Basic Modification
+# (sort/tsort | shuf | uniq | ptx - permuted index of file) 
+comm # compare sorted files
+# tr “from” “to” / -d (delete)
+# expand/unexpand - tabs to pace or vice versa
 paste
 
-Advanced Modification
+# Advanced Modification
 bc
 grep - searches text
 sed
 awk
-
-gzip # compresses file 
-gunzip # uncompress file 
-gzcat # view compressed file
 ```
 ```powershell
 Get-CimInstance
@@ -260,10 +228,7 @@ type
 ```
 Core - Shell Utilities
 ```bash
-echo - returns arguments as string
-true/ false - true/false
-printf - formatted print
-tee - writes to file from std input
+# (echo | true/false | printf | tee - writes to file from std input)
 ```
 ```powershell
 
