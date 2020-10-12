@@ -5,19 +5,31 @@
 ```shell
 git man
 git help
+
+git config --list
+git config --global user.name "name"
+git config --global user.email "email"
 ```
 ## Settings
 
 ```shell
 git init $path
 git config
-git clone $url $directory
+git clone -b $branch_name $url $directory/destination_url
 alias missing
+```
+
+```shell
+git tag
+git tag -l 'v1.4.2.*'
+git tag -a v1.4 -m 'version 1.d'
+git tag where_it_all_began -m "commit"
 ```
 ## Saving
 
 ```shell
 git add $file / . 
+git add --dry-run
 
 view merge conflicts
 git diff
@@ -26,6 +38,7 @@ git diff --staged
 git diff --summary
 git diff --base $file
 git diff $source $target
+git diff $master...$branch
 
 git commit -m “message”
 
@@ -46,7 +59,7 @@ missing gitignore
 ## History
 
 ```shell
-missing clean
+git clean -n
 
 Remove file from stage
 git reset $file 
@@ -59,8 +72,8 @@ git reset --hard $commit
 
 git revert $commit
 
-Create a new branch
-git checkout -b $branch
+Create a new branch or go to past
+git checkout -b $branch $thepast
 
 Switch to another branch/recover file
 git checkout $branch
@@ -86,6 +99,8 @@ git push -u $remote $branch
 delete remote branch
 git push origin --delete :$branch
 git push $remote :$branch
+
+git push --set-upstream origin master
 
 get a remote branch 
 git fetch origin 
