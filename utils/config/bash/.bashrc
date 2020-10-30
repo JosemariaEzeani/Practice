@@ -1,5 +1,3 @@
-# ~/.bashrc: for non-login shells.
-
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=${PATH}:/usr/local/mysql/bin
 export PATH=$PATH:/opt/apache-maven/bin
@@ -10,27 +8,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-alias j15="export JAVA_HOME=`/usr/libexec/java_home -v 15`; java -version"
-alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
-alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1`; java -version"
-alias jversions="/usr/libexec/java_home -V"
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias lsf='ls -p | grep -v /'
-alias lsd='ls -d .*/ */'
-alias uu='sudo apt update && sudo apt -y upgrade'
-alias mv='mv -i'
-alias mkdir='mkdir -p'
-alias df='df -hT'
-alias cat='clear && cat'
-alias less='clear && less -NX'
-alias update='source ~/.bashrc'
-alias linhome='cd /mnt/wsl'
-alias exthome='cd /mnt/d/Users/dinak'
-alias winhome='cd /mnt/c/Users/dinak'
-alias glog='git log --oneline --decorate --graph --all'
-
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
@@ -81,4 +59,23 @@ if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
 	source /usr/share/powerline/bindings/bash/powerline.sh
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+alias j15="export JAVA_HOME=`/usr/libexec/java_home -v 15`; java -version"
+alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
+alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1`; java -version"
+alias jversions="/usr/libexec/java_home -V"
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias lsf='ls -p | grep -v /'
+alias lsd='ls -d .*/ */'
+alias uu='sudo apt update && sudo apt -y upgrade'
+alias mv='mv -i'
+alias mkdir='mkdir -p'
+alias df='df -hT'
+alias cat='clear && cat'
+alias less='clear && less -NX'
+alias update='source ~/.bashrc'
+alias linhome='cd /mnt/wsl'
+alias exthome='cd /mnt/d/Users/dinak'
+alias winhome='cd /mnt/c/Users/dinak'
+alias glog='git log --oneline --decorate --graph --all'
