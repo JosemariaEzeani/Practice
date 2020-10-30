@@ -18,7 +18,7 @@
 
 **RENAME:** `$`
 
-**DETACH:** `d`
+**DETACH:** `d`(or `tmux detach`)
 
 **LS:** `s`
 
