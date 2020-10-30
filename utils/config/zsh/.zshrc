@@ -1,4 +1,3 @@
-# Path to your oh-my-zsh installation.
 export ZSH="/Users/DEZ01/.oh-my-zsh"
 export PATH="/Users/DEZ01/Library/Python/2.7/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
