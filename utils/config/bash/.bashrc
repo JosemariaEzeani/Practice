@@ -2,6 +2,7 @@
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=${PATH}:/usr/local/mysql/bin
+export PATH=$PATH:/opt/apache-maven/bin
 
 alias j15="export JAVA_HOME=`/usr/libexec/java_home -v 15`; java -version"
 alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
@@ -12,6 +13,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
