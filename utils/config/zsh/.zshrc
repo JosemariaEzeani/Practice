@@ -7,6 +7,9 @@ export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 
+# Load Antigen
+source ~/antigen.zsh
+
 # Load Antigen configurations
 antigen init ~/.antigenrc
 
@@ -94,7 +97,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # unset __conda_setup
 # # <<< conda initialize <<<
 
-source ~/antigen.zsh
 source $ZSH/oh-my-zsh.sh
 
 # Tell Antigen that you're done.
