@@ -342,7 +342,7 @@ unbind %
 #-------------------------------------------------------#
 #Active Pane colours
 #-------------------------------------------------------#
-set -g window-active-style 'fg=colour250,bg=black'
+# set -g window-active-style 'fg=colour250,bg=black'
 set -g pane-active-border-bg colour236
 set -g pane-active-border-fg colour51
 #-------------------------------------------------------#
