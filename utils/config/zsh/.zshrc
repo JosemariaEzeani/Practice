@@ -1,3 +1,4 @@
+export ZSH="~/.oh-my-zsh"
 export PATH="~/Library/Python/2.7/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=${PATH}:/usr/local/mysql/bin
@@ -6,11 +7,10 @@ export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 
-# Load Antigen
-source ~/antigen.zsh
-
-# Load Antigen configurations
-antigen init ~/.antigenrc
+ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(zsh-syntax-highlighting git fzf npm zsh-autosuggestions command-not-found zsh-completions)
+autoload -U compinit && compinit
+source $ZSH/oh-my-zsh.sh
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -36,8 +36,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
-
-autoload -Uz bashcompinit && bashcompinit
 
 # Powerline configuration
 if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
