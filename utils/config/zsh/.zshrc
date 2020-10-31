@@ -47,7 +47,7 @@ if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
 	source /usr/share/powerline/bindings/bash/powerline.sh
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ZSH_DISABLE_COMPFIX=true
 
