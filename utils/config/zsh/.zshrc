@@ -1,5 +1,5 @@
-# export ZSH="/Users/DEZ01/.oh-my-zsh"
-# export PATH="/Users/DEZ01/Library/Python/2.7/bin:$PATH"
+export ZSH="~/.oh-my-zsh"
+export PATH="~/Library/Python/2.7/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=${PATH}:/usr/local/mysql/bin
 export PATH=$PATH:/opt/apache-maven/bin
