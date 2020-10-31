@@ -317,6 +317,13 @@ set -g history-limit 10000
 # start with mouse mode enabled
 set -g mouse on
 
+setw -g aggressive-resize on
+
+bind | split-window -h
+bind - split-window -v
+unbind '"'
+unbind %
+
 # force Vi mode
 #   really you should export VISUAL or EDITOR environment variable, see manual
 #set -g status-keys vi
@@ -332,6 +339,15 @@ set -g mouse on
 # move status line to top
 #set -g status-position top
 
+#-------------------------------------------------------#
+#Active Pane colours
+#-------------------------------------------------------#
+set -g window-active-style 'fg=colour250,bg=black'
+set -g pane-active-border-bg colour236
+set -g pane-active-border-fg colour51
+#-------------------------------------------------------#
+
+bind r source-file ~/.tmux.conf \; display "Reloaded ~/.tmux.conf"
 
 # -- custom variables ----------------------------------------------------------
 # to define a custom #{foo} variable, define a POSIX shell function between the
@@ -356,3 +372,44 @@ set -g mouse on
 #
 # "$@"
 # # /!\ do not remove the previous line
+
+#####################################
+# Plugins
+####################################
+
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'dracula/tmux'
+set -g @dracula-show-powerline true
+set -g @dracula-cpu-usage true
+set -g @dracula-ram-usage true
+set -g @plugin 'tmux-plugins/tmux-yank'
+
+#####################################
+# tmux-resurrect - save and reload sessions and windows after a restart
+# https://github.com/tmux-plugins/tmux-resurrect
+# Default keybinds : save - command + c + s && restore command + c + r
+######################################
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+### tmux-resurrect extra settings ###
+# keep vim sessions after reboot
+set -g @resurrect-strategy-vim 'session'
+# keep pane contents
+set -g @resurrect-capture-pane-contents 'on'
+# restore bash history
+set -g @resurrect-save-bash-history 'on'
+### /tmux-resurrect extra settings ###
+
+######################################
+# tmux-continuum - automatically save and restore tmux sessions
+# https://github.com/tmux-plugins/tmux-continuum
+#####################################
+set -g @plugin 'tmux-plugins/tmux-continuum'
+# Restore last saved enviroment
+set -g @continuum-restore 'on'
+# Set autosave interval
+set -g @continuum-save-interval '5'
+# Show continiuum state in statusbar
+#set -g status-right 'Continuum status: #{continuum_status}'
+# Starting tmux with system https://github.com/tmux-plugins/tmux-continuum/blob/master/docs/automatic_start.md
+
+run -b '~/.tmux/plugins/tpm/tpm'
