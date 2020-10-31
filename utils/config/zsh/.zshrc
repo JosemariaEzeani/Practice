@@ -13,6 +13,19 @@ source $ZSH/oh-my-zsh.sh
 # Load Antigen configurations
 antigen init ~/.antigenrc
 
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
@@ -80,6 +93,9 @@ plugins=(git)
 # fi
 # unset __conda_setup
 # # <<< conda initialize <<<
+
+# Tell Antigen that you're done.
+antigen apply
 
 alias j15="export JAVA_HOME=`/usr/libexec/java_home -v 15`; java -version"
 alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
