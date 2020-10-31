@@ -72,6 +72,7 @@ fi
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git)
+plugins=(zsh-autosuggestions)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
