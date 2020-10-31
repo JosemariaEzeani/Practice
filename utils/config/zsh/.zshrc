@@ -1,4 +1,3 @@
-export ZSH="~/.oh-my-zsh"
 export PATH="~/Library/Python/2.7/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=${PATH}:/usr/local/mysql/bin
@@ -12,24 +11,6 @@ source ~/antigen.zsh
 
 # Load Antigen configurations
 antigen init ~/.antigenrc
-
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
-
-antigen bundle rsync
-antigen bundle lein
-
-antigen bundle git
-antigen bundle docker
-
-antigen bundle pip
-antigen bundle python
-
-antigen bundle history
-antigen bundle command-not-found
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -96,11 +77,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # fi
 # unset __conda_setup
 # # <<< conda initialize <<<
-
-source $ZSH/oh-my-zsh.sh
-
-# Tell Antigen that you're done.
-antigen apply
 
 alias j15="export JAVA_HOME=`/usr/libexec/java_home -v 15`; java -version"
 alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
