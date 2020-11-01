@@ -8,6 +8,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_DISABLE_COMPFIX=true
 plugins=(zsh-syntax-highlighting git fzf npm zsh-autosuggestions command-not-found zsh-completions)
 autoload -U compinit && compinit
 source $ZSH/oh-my-zsh.sh
@@ -46,8 +47,6 @@ if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-ZSH_DISABLE_COMPFIX=true
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
