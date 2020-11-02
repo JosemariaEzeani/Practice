@@ -1,11 +1,14 @@
 export ZSH="/home/dinaka/.oh-my-zsh"
 export PATH="/home/dinaka/Library/Python/2.7/bin:$PATH"
-export JAVA_HOME=$(/usr/libexec/java_home)
+# export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=${PATH}:/usr/local/mysql/bin
 export PATH=$PATH:/opt/apache-maven/bin
-export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export NVM_DIR="$HOME/.nvm"
+export PATH="/home/dinaka/bin:$PATH"
+export PATH="/home/dinaka/.local/bin:$PATH"
+export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export NVM_DIR="/home/dinaka/.nvm"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_DISABLE_COMPFIX=true
@@ -51,8 +54,8 @@ fi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of /home/dinaka/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+if [[ -r "${XDG_CACHE_HOME:-/home/dinaka/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-/home/dinaka/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # To customize prompt, run `p10k configure` or edit /home/dinaka/.p10k.zsh.
@@ -73,10 +76,10 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-alias j15="export JAVA_HOME=`/usr/libexec/java_home -v 15`; java -version"
-alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
-alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1`; java -version"
-alias jversions="/usr/libexec/java_home -V"
+# alias j15="export JAVA_HOME=`/usr/libexec/java_home -v 15`; java -version"
+# alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
+# alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1`; java -version"
+# alias jversions="/usr/libexec/java_home -V"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
