@@ -5,9 +5,9 @@ export PATH=${PATH}:/usr/local/mysql/bin
 export PATH=$PATH:/opt/apache-maven/bin
 export PATH="/Users/DEZ01/bin:$PATH"
 export PATH="/Users/DEZ01/.local/bin:$PATH"
-export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+# export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
+# export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+# export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 export NVM_DIR="/Users/DEZ01/.nvm"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
