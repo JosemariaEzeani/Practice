@@ -6,25 +6,22 @@
 
 **Topics**
 
-1. **Important**
-2. **Advanced/Challenges** 
-3. **Interesting** 
+1. [**Important**](https://github.com/JosemariaEzeani/Practice/blob/master/content/IMPORTANT_TOPICS.md)
+2. [**Advanced/Challenges**](https://github.com/JosemariaEzeani/Practice/blob/master/content/ADVANCED_CHALLENGES.md) 
+3. [**Interesting**](https://github.com/JosemariaEzeani/Practice/blob/master/content/INTERESTING_TOPICS.md) 
 
 
 
-**Maths** 
+[**Maths**](https://github.com/JosemariaEzeani/Practice/blob/master/content/MATHS.md) 
 
 
 
 **Types of Learning** 
 
-1. **Supervised** 
-2. **Semi-Supervised** 
-      1. **Relevance vector machine (RVM)**
-      2. **Gaussian process regression**
-3. **Unsupervised**
-      1. **Vector Quantization**
-4. **Reinforcement** 
+1. [**Supervised**](https://github.com/JosemariaEzeani/Practice/blob/master/content/SUPERVISED.md) 
+2. [**Semi-Supervised**](https://github.com/JosemariaEzeani/Practice/blob/master/content/SEMI_SUPERVISED.md) 
+3. [**Unsupervised**](https://github.com/JosemariaEzeani/Practice/blob/master/content/UNSUPERVISED.md)
+4. [**Reinforcement**](https://github.com/JosemariaEzeani/Practice/blob/master/content/REINFORCEMENT.md) 
 
 
 <!--**Kernel Regression**--> 
