@@ -46,7 +46,11 @@
 
 **Activate/Deactivate Environment:** `conda activate/deactivate <env>`
 
-**List [Revision to] Packages:** `conda list [--name <env>] [--revisions]`
+**List**
+
+​	**[Revision to] Packages:** `conda list [--name <env>] [--revisions]`
+
+​	**Environments:** `conda env list `
 
 **Restore Environment:** `conda install --name <env> --revisions <number>`
 
@@ -62,5 +66,5 @@ conda env update --file <environment.yml>  --prune
 
 `--help`
 
-
+`conda env export --no-builds > environment_tf2.yml` conda asn1crypto=1.2.0
 
