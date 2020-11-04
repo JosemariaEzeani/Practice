@@ -35,4 +35,3 @@
    14. **Projection pursuit** 
    15. **Sammon mapping** 
    16. **t-distributed stochastic neighbor embedding (t-SNE)**
-8. **Outlier Detection**

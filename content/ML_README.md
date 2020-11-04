@@ -4,11 +4,21 @@
 
 
 
+**Introduction** 
+
+1. [**Modelling**](https://github.com/JosemariaEzeani/Practice/blob/master/content/MODELLING.md)
+2. [**Performance**](https://github.com/JosemariaEzeani/Practice/blob/master/content/PERFORMANCE.md)
+
+
+
 **Topics**
 
 1. [**Important**](https://github.com/JosemariaEzeani/Practice/blob/master/content/IMPORTANT_TOPICS.md)
 2. [**Advanced/Challenges**](https://github.com/JosemariaEzeani/Practice/blob/master/content/ADVANCED_CHALLENGES.md) 
 3. [**Interesting**](https://github.com/JosemariaEzeani/Practice/blob/master/content/INTERESTING_TOPICS.md) 
+4. **[Classifiers](https://github.com/JosemariaEzeani/Practice/blob/master/content/CLASSIFIERS.md)**
+6. **[Decision Trees](https://github.com/JosemariaEzeani/Practice/blob/master/content/DECISION_TREES.md)**
+7. **[Neural Networks](https://github.com/JosemariaEzeani/Practice/blob/master/content/NEURAL_NETWORKS.md)**
 
 
 
@@ -58,7 +68,5 @@
 <!--2. **Bayes net**-->
 <!--3. **Conditional random field**-->
 <!--4. **Hidden Markov**-->
-
-
 
 <!-- https://en.wikipedia.org/wiki/Regression_analysis -->
