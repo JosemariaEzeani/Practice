@@ -1,4 +1,4 @@
-**Decision tree** 
+**Decision trees** 
 
 1.	**Classification and regression tree (CART)** 
 
