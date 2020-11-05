@@ -20,6 +20,9 @@
     2.  **Eclat algorithm** 
     3.  **FP-growth algorithm**
 8.  **Support vector machine (SVM)**
+$$
+\text{labels/sign_of_hyperplane: {positive: +1, negative: -1}} 
+$$
 9.  **Multivariate adaptive regression splines (MARS)**
 10.  **Lazy Learning**
 11.  **Information fuzzy networks**

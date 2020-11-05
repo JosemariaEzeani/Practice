@@ -6,6 +6,11 @@
 4. **Information bottleneck method**
 5. **Density Estimation**
 6. **Clustering**
+$$
+\text{dataset} = \left\{\left(\mathbf{x}_{i}^{j}\right)\right\}_{i=1}^{N} = \text{unlabeled examples} \\
+\mathbf{x}_{i}^{j} = \text{feature vector, dimensions} = j \text{ (describes data)} \\
+\text{goal}: \mathbf{x}_{i}^{j} → y_{i} = \text{cluster_id}
+$$
    1. **K-Means**
    2. **DBSCAN & HDBSCAN**
    3. **BIRCH**
@@ -19,6 +24,11 @@
    9. **OPTICS**
    10. **Mean-shift**
 7. **Dimensionality Reduction**
+$$
+\text{dataset} = \left\{\left(\mathbf{x}_{i}^{j}\right)\right\}_{i=1}^{N} = \text{unlabeled examples} \\
+\mathbf{x}_{i}^{j} = \text{feature vector, dimensions} = j \text{ (describes data)} \\
+\text{goal}: \mathbf{x}_{i}^{j} → \mathbf{x}_{i}^{k} = \text{transformation } (k < j)
+$$
    1. **PGD**
    2. **UMAP**
    3. **Canonical correlation analysis (CCA)** 
@@ -35,3 +45,9 @@
    14. **Projection pursuit** 
    15. **Sammon mapping** 
    16. **t-distributed stochastic neighbor embedding (t-SNE)**
+   17. **Anomaly Detection**
+$$
+\text{dataset} = \left\{\left(\mathbf{x}_{i}^{j}\right)\right\}_{i=1}^{N} = \text{unlabeled examples} \\
+\mathbf{x}_{i}^{j} = \text{feature vector, dimensions} = j \text{ (describes data)} \\
+\text{goal}: \mathbf{x}_{i}^{j} → y_{i} = \text{divergence_measure}
+$$
