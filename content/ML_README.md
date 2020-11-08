@@ -6,29 +6,29 @@
 
 **Introduction** 
 
-1. [**Modelling**](https://github.com/JosemariaEzeani/Practice/blob/master/content/MODELLING.md)
-2. [**Performance**](https://github.com/JosemariaEzeani/Practice/blob/master/content/PERFORMANCE.md)
+1. [**Modelling**](content/MODELLING.md)
+2. [**Performance**](content/PERFORMANCE.md)
 
 
 
 **Topics**
 
-1. [**Important**](https://github.com/JosemariaEzeani/Practice/blob/master/content/IMPORTANT_TOPICS.md)
-2. [**Advanced/Challenges**](https://github.com/JosemariaEzeani/Practice/blob/master/content/ADVANCED_CHALLENGES.md) 
-3. [**Interesting**](https://github.com/JosemariaEzeani/Practice/blob/master/content/INTERESTING_TOPICS.md) 
-4. **[Classifiers](https://github.com/JosemariaEzeani/Practice/blob/master/content/CLASSIFIERS.md)**
-6. **[Decision Trees](https://github.com/JosemariaEzeani/Practice/blob/master/content/DECISION_TREES.md)**
-7. **[Neural Networks](https://github.com/JosemariaEzeani/Practice/blob/master/content/NEURAL_NETWORKS.md)**
+1. [**Important**](content/IMPORTANT_TOPICS.md)
+2. [**Advanced/Challenges**](content/ADVANCED_CHALLENGES.md) 
+3. [**Interesting**](content/INTERESTING_TOPICS.md) 
+4. **[Classifiers](content/CLASSIFIERS.md)**
+6. **[Decision Trees](content/DECISION_TREES.md)**
+7. **[Neural Networks](content/NEURAL_NETWORKS.md)**
 
 
 
-[**Maths**](https://github.com/JosemariaEzeani/Practice/blob/master/content/MATHS.md) 
+[**Maths**](content/MATHS.md) 
 
 
 
 **Types of Learning** 
 
-1. [**Supervised**](https://github.com/JosemariaEzeani/Practice/blob/master/content/SUPERVISED.md) 
+1. [**Supervised**](content/SUPERVISED.md) 
 
 $$
 \text{dataset} = \left\{\left(\mathbf{x}_{i}^{j}, y_{i}\right)\right\}_{i=1}^{N} = \text{labeled examples} \\
@@ -36,20 +36,20 @@ $$
 \text{goal}: \mathbf{x}_{i}^{j} → y_{i}
 $$
 
-2. [**Semi-Supervised**](https://github.com/JosemariaEzeani/Practice/blob/master/content/SEMI_SUPERVISED.md) 
+2. [**Semi-Supervised**](content/SEMI_SUPERVISED.md) 
 $$
 \text{dataset} = \left\{\left(\mathbf{x}_{i}^{j}, y_{t}\right)\right\}_{i=1, t=1}^{N, M} = \text{labeled examples where } (M < N)\\
 \mathbf{x}_{i}^{j} = \text{feature vector, dimensions} = j \text{ (describes data)} \\
 \text{goal}: \mathbf{x}_{i}^{j} → y_{i} \\
 \text{characteristic: }↑(N/M) → \text{more information = better model}
 $$
-3. [**Unsupervised**](https://github.com/JosemariaEzeani/Practice/blob/master/content/UNSUPERVISED.md)
+3. [**Unsupervised**](content/UNSUPERVISED.md)
 $$
 \text{dataset} = \left\{\left(\mathbf{x}_{i}^{j}\right)\right\}_{i=1}^{N} = \text{unlabeled examples} \\
 \mathbf{x}_{i}^{j} = \text{feature vector, dimensions} = j \text{ (describes data)} \\
 \text{goal}: \mathbf{x}_{i}^{j} → y_{i}
 $$
-4. [**Reinforcement**](https://github.com/JosemariaEzeani/Practice/blob/master/content/REINFORCEMENT.md) 
+4. [**Reinforcement**](content/REINFORCEMENT.md) 
 $$
 \text{characteristic: {decision-mking: sequential, goal: long-term}} \\
 \text{environment + state = (feature vector + actions)} \\
