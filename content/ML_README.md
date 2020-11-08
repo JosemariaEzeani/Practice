@@ -6,29 +6,29 @@
 
 **Introduction** 
 
-1. [**Modelling**](content/MODELLING.md)
-2. [**Performance**](content/PERFORMANCE.md)
+1. [**Modelling**](MODELLING.md)
+2. [**Performance**](PERFORMANCE.md)
 
 
 
 **Topics**
 
-1. [**Important**](content/IMPORTANT_TOPICS.md)
-2. [**Advanced/Challenges**](content/ADVANCED_CHALLENGES.md) 
-3. [**Interesting**](content/INTERESTING_TOPICS.md) 
-4. **[Classifiers](content/CLASSIFIERS.md)**
-6. **[Decision Trees](content/DECISION_TREES.md)**
-7. **[Neural Networks](content/NEURAL_NETWORKS.md)**
+1. [**Important**](IMPORTANT_TOPICS.md)
+2. [**Advanced/Challenges**](ADVANCED_CHALLENGES.md) 
+3. [**Interesting**](INTERESTING_TOPICS.md) 
+4. **[Classifiers](CLASSIFIERS.md)**
+6. **[Decision Trees](DECISION_TREES.md)**
+7. **[Neural Networks](NEURAL_NETWORKS.md)**
 
 
 
-[**Maths**](content/MATHS.md) 
+[**Maths**](MATHS.md) 
 
 
 
 **Types of Learning** 
 
-1. [**Supervised**](content/SUPERVISED.md) 
+1. [**Supervised**](SUPERVISED.md) 
 
 $$
 \text{dataset} = \left\{\left(\mathbf{x}_{i}^{j}, y_{i}\right)\right\}_{i=1}^{N} = \text{labeled examples} \\
@@ -36,20 +36,20 @@ $$
 \text{goal}: \mathbf{x}_{i}^{j} → y_{i}
 $$
 
-2. [**Semi-Supervised**](content/SEMI_SUPERVISED.md) 
+2. [**Semi-Supervised**](SEMI_SUPERVISED.md) 
 $$
 \text{dataset} = \left\{\left(\mathbf{x}_{i}^{j}, y_{t}\right)\right\}_{i=1, t=1}^{N, M} = \text{labeled examples where } (M < N)\\
 \mathbf{x}_{i}^{j} = \text{feature vector, dimensions} = j \text{ (describes data)} \\
 \text{goal}: \mathbf{x}_{i}^{j} → y_{i} \\
 \text{characteristic: }↑(N/M) → \text{more information = better model}
 $$
-3. [**Unsupervised**](content/UNSUPERVISED.md)
+3. [**Unsupervised**](UNSUPERVISED.md)
 $$
 \text{dataset} = \left\{\left(\mathbf{x}_{i}^{j}\right)\right\}_{i=1}^{N} = \text{unlabeled examples} \\
 \mathbf{x}_{i}^{j} = \text{feature vector, dimensions} = j \text{ (describes data)} \\
 \text{goal}: \mathbf{x}_{i}^{j} → y_{i}
 $$
-4. [**Reinforcement**](content/REINFORCEMENT.md) 
+4. [**Reinforcement**](REINFORCEMENT.md) 
 $$
 \text{characteristic: {decision-mking: sequential, goal: long-term}} \\
 \text{environment + state = (feature vector + actions)} \\
