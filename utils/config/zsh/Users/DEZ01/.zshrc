@@ -80,7 +80,7 @@ unset __conda_setup
 # alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
 # alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1`; java -version"
 # alias jversions="/usr/libexec/java_home -V"
-alias connect='ssh -p 28 -X dinaka@10.186.134.20'
+alias connect='ssh -p 28 -X dinaka@11.187.134.21' #needs modificatin to be accurate
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
