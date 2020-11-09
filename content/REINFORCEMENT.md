@@ -7,6 +7,8 @@ $$
 \text{characteristic: {input: independent, predictions: past}} \\
 \text{distance_metric = euclidean norm}
 $$
-4. **Learning Automata**
-5. **Temporal difference (TD)**
+4. Siamese Neural Network
+5. Zero-Shot
+6. **Learning Automata**
+7. **Temporal difference (TD)**
 

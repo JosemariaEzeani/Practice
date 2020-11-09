@@ -1,4 +1,4 @@
-**Decision trees** 
+**Decision trees:** acyclic graphs used for decision making.
 
 1.	**Classification and regression tree (CART)** 
 

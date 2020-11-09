@@ -2,9 +2,9 @@
 
 1. **Sample Data**
    1. **Training** 
-   2. **Validation**
-   3. **Test**
-   4. **Holdout**
+   2. **Holdout**
+      1. **Validation:**
+      2. **Test**
 2. **Cross-validation** 
 3. **Selection**
    1. **Explanability** 

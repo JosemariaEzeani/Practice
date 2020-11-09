@@ -107,5 +107,10 @@ $$
 \text{better_generalisation} = minimise(\|\mathbf{w}\|)
 $$
 2. **kernel:** used to arbiterily create non-lineartity?
-3. **Hyperplane:** subspace with a dimension -1 that of the ambient space. Usually used to bisect data within the context of machine learning (**Note:** boundary separating classes of data is = decision boundary).
-4. **Hyperplane:** subspace with a dimension -1 that of the ambient space. Usually used to bisect data within the context of machine learning (**Note:** boundary separating classes of data is = decision boundary).
+3. **Classification:** predicting discrete labels.#Binary/Binomial #Multiclass/Multinomial
+4. **Regression:** predicting real-valued labels.
+5. **Bias:** how well a models predicts labels of the training data.
+6. **Epoch:** 
+7. **Learning Rate:**
+8. Weak learners 
+

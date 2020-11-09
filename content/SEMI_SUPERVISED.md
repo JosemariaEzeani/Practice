@@ -1,9 +1,10 @@
 **Semi-Supervised**
 
-1. **Active learning** 
-2. **Generative models** 
-3. **Low-density separation** 
-4. **Graph-based methods** 
-5. **Co-training** 
-6. **Transduction**
+2. Self-Learning
+2. Ladder Network
+3. **Generative models** 
+4. **Low-density separation** 
+5. **Graph-based methods** 
+6. **Co-training** 
+7. **Transduction**
 

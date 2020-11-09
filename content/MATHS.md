@@ -1,1 +1,3 @@
+Parametric 
 
+Non-Parametric 
