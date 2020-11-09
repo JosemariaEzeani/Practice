@@ -105,3 +105,4 @@ keychain. To add additional certificates, place .pem files in
 and run
   /home/linuxbrew/.linuxbrew/opt/openssl@1.1/bin/c_rehash
 '
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
