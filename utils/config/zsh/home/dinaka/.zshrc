@@ -11,6 +11,9 @@ export ZSH="/home/dinaka/.oh-my-zsh"
 # export JAVA_HOME=/path/to/java_installation
 export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib"
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/isl@0.18/include"
+export PKG_CONFIG_PATH="/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib/pkgconfig"
 export NVM_DIR="/home/dinaka/.nvm"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
