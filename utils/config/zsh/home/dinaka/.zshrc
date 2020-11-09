@@ -5,7 +5,7 @@ mysql=/usr/local/mysql/bin
 local_bin=/home/dinaka/.local/bin
 my_bin=/home/dinaka/bin
 cuda=/usr/local/cuda-10.1/bin
-PATH=python:brew:mysql:local_bin:my_bin:cuda:${PATH:+:${PATH}}"
+PATH=python:brew:mysql:local_bin:my_bin:cuda:${PATH:+:${PATH}}
 
 export ZSH="/home/dinaka/.oh-my-zsh"
 # export JAVA_HOME=/path/to/java_installation
