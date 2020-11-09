@@ -96,3 +96,12 @@ alias cat='clear && cat'
 alias less='clear && less -NX'
 alias update='source /home/dinaka/.bashrc'
 alias glog='git log --oneline --decorate --graph --all'
+
+:'
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /home/linuxbrew/.linuxbrew/etc/openssl@1.1/certs
+
+and run
+  /home/linuxbrew/.linuxbrew/opt/openssl@1.1/bin/c_rehash
+'
