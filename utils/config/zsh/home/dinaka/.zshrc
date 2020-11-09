@@ -22,12 +22,22 @@ source $ZSH/oh-my-zsh.sh
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# don't put duplicate lines or lines starting with space in the history.
-HISTCONTROL=ignoreboth
+# The following lines were added by compinstall
 
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
+zstyle ':completion:*' completer _complete _ignored
+zstyle :compinstall filename '/home/dinaka/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
 HISTFILESIZE=2000
+HISTSIZE=1000
+SAVEHIST=1000
+HISTCONTROL=ignoreboth # don't put duplicate lines or lines starting with space in the history.
+bindkey -e
+# End of lines configured by zsh-newuser-install
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
