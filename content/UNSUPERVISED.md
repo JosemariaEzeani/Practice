@@ -20,7 +20,6 @@ $$
   	2. **Conceptual clustering**
    6. **k-means**
    7. **Expectation–maximization (EM)**
-   8. **DBSCAN**
    9. **OPTICS**
    10. **Mean-shift**
 7. **Dimensionality Reduction**
