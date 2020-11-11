@@ -1,30 +1,47 @@
-export ZSH="~/.oh-my-zsh"
-export PATH="~/Library/Python/2.7/bin:$PATH"
-# export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH=${PATH}:/usr/local/mysql/bin
-export PATH=$PATH:/opt/apache-maven/bin
-export PATH="~/bin:$PATH"
-export PATH="~/.local/bin:$PATH"
-export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
+# maven=/opt/apache-maven/bin
+python=~/Library/Python/2.7/bin
+brew=/home/linuxbrew/.linuxbrew/bin
+mysql=/usr/local/mysql/bin
+local_bin=~/.local/bin
+my_bin=~/bin
+cuda=/usr/local/cuda-10.1/bin
+PATH=python:brew:mysql:local_bin:my_bin:cuda:${PATH:+:${PATH}}
+
+export ZSH=~/.oh-my-zsh
+# export JAVA_HOME=/path/to/java_installation
 export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-export NVM_DIR="~/.nvm"
+export LDFLAGS=-L/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib
+export CPPFLAGS=-I/home/linuxbrew/.linuxbrew/opt/isl@0.18/include
+export PKG_CONFIG_PATH=/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib/pkgconfig
+export NVM_DIR=~/.nvm
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME=powerlevel10k/powerlevel10k
 ZSH_DISABLE_COMPFIX=true
-plugins=(zsh-syntax-highlighting git fzf npm zsh-autosuggestions command-not-found zsh-completions)
+# plugins=(zsh-syntax-highlighting git fzf npm zsh-autosuggestions command-not-found zsh-completions)
+# plugins=(git fzf npm zsh-autosuggestions command-not-found zsh-completions)
 autoload -U compinit && compinit
 source $ZSH/oh-my-zsh.sh
 
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s $NVM_DIR/nvm.sh ] && \. $NVM_DIR/nvm.sh  # This loads nvm
+[ -s $NVM_DIR/bash_completion ] && \. $NVM_DIR/bash_completion  # This loads nvm bash_completion
 
-# don't put duplicate lines or lines starting with space in the history.
-HISTCONTROL=ignoreboth
+# The following lines were added by compinstall
 
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
+zstyle ':completion:*' completer _complete _ignored
+zstyle :compinstall filename ~/.zshrc
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
 HISTFILESIZE=2000
+HISTSIZE=1000
+SAVEHIST=1000
+HISTCONTROL=ignoreboth # don't put duplicate lines or lines starting with space in the history.
+bindkey -e
+# End of lines configured by zsh-newuser-install
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -63,14 +80,14 @@ fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('~/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$(~/anaconda3/bin/conda 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "~/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "~/anaconda3/etc/profile.d/conda.sh"
+    if [ -f ~/anaconda3/etc/profile.d/conda.sh ]; then
+        . ~/anaconda3/etc/profile.d/conda.sh
     else
-        export PATH="~/anaconda3/bin:$PATH"
+        export PATH=~/anaconda3/bin:$PATH
     fi
 fi
 unset __conda_setup
@@ -80,6 +97,7 @@ unset __conda_setup
 # alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
 # alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1`; java -version"
 # alias jversions="/usr/libexec/java_home -V"
+alias connect='ssh -p 28 -X dinaka@11.187.134.21'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -92,7 +110,14 @@ alias df='df -hT'
 alias cat='clear && cat'
 alias less='clear && less -NX'
 alias update='source ~/.bashrc'
-# alias linhome='cd /mnt/wsl'
-# alias exthome='cd /mnt/d/Users/dinak'
-# alias winhome='cd /mnt/c/Users/dinak'
 alias glog='git log --oneline --decorate --graph --all'
+
+:'
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /home/linuxbrew/.linuxbrew/etc/openssl@1.1/certs
+
+and run
+  /home/linuxbrew/.linuxbrew/opt/openssl@1.1/bin/c_rehash
+'
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
